@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <!--
+		CSS
+		============================================= -->
+    <link rel="stylesheet" href="/lib/css/linearicons.css" />
+    <link rel="stylesheet" href="/lib/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/lib/css/themify-icons.css" />
+    <link rel="stylesheet" href="/lib/css/bootstrap.css" />
+    <link rel="stylesheet" href="/lib/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/lib/css/nice-select.css" />
+    <link rel="stylesheet" href="/lib/css/nouislider.min.css" />
+    <link rel="stylesheet" href="/lib/css/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="/lib/css/ion.rangeSlider.skinFlat.css" />
+    <link rel="stylesheet" href="/lib/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/lib/css/main.css" />
+</head>
+
+<body ng-controller="CheckoutController">
+
+
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Checkout</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="#!/">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="#!/checkout">Thanh Toán Đơn Hàng</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+
+    <!--================Checkout Area =================-->
+    <section class="checkout_area section_gap">
+        <div class="container">
+            <div class="returning_customer">
+                <div class="check_title">
+                    <h2>Khách hàng quay lại? <a href="#">Nhấn vào đây để đăng nhập</a></h2>
+                </div>
+                <p>Nếu bạn đã mua sắm với chúng tôi trước đây, vui lòng nhập thông tin của bạn vào các ô dưới đây. Nếu
+                    bạn là khách hàng mới, vui lòng tiếp tục đến phần Thanh toán & Giao hàng.</p>
+                <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+                    <div class="col-md-6 form-group p_star">
+                        <input type="text" class="form-control" id="name" name="name">
+                        <span class="placeholder" data-placeholder="Tên người dùng hoặc Email"></span>
+                    </div>
+                    <div class="col-md-6 form-group p_star">
+                        <input type="password" class="form-control" id="password" name="password">
+                        <span class="placeholder" data-placeholder="Mật khẩu"></span>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <button type="submit" value="submit" class="primary-btn">Đăng nhập</button>
+                        <div class="creat_account">
+                            <input type="checkbox" id="f-option" name="selector">
+                            <label for="f-option">Ghi nhớ tôi</label>
+                        </div>
+                        <a class="lost_pass" href="#">Quên mật khẩu?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="cupon_area">
+                <div class="check_title">
+                    <h2>Có mã giảm giá? <a href="#">Nhấn vào đây để nhập mã của bạn</a></h2>
+                </div>
+                <input type="text" placeholder="Nhập mã giảm giá">
+                <a class="tp_btn" href="#">Áp dụng mã giảm giá</a>
+            </div>
+            <div class="billing_details">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h3>Chi tiết thanh toán</h3>
+                        <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+                            <div class="col-md-6 form-group p_star">
+                                <input type="text" class="form-control" id="first" name="name">
+                                <span class="placeholder" data-placeholder="Tên"></span>
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="text" class="form-control" id="last" name="name">
+                                <span class="placeholder" data-placeholder="Họ"></span>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="company" name="company"
+                                    placeholder="Tên công ty">
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="text" class="form-control" id="number" name="number">
+                                <span class="placeholder" data-placeholder="Số điện thoại"></span>
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="text" class="form-control" id="email" name="compemailany">
+                                <span class="placeholder" data-placeholder="Địa chỉ Email"></span>
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <select class="country_select">
+                                    <option value="1">Quốc gia</option>
+                                    <option value="2">Quốc gia</option>
+                                    <option value="4">Quốc gia</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <input type="text" class="form-control" id="add1" name="add1">
+                                <span class="placeholder" data-placeholder="Địa chỉ dòng 01"></span>
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <input type="text" class="form-control" id="add2" name="add2">
+                                <span class="placeholder" data-placeholder="Địa chỉ dòng 02"></span>
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <input type="text" class="form-control" id="city" name="city">
+                                <span class="placeholder" data-placeholder="Thành phố"></span>
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <select class="country_select">
+                                    <option value="1">Quận/Huyện</option>
+                                    <option value="2">Quận/Huyện</option>
+                                    <option value="4">Quận/Huyện</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="zip" name="zip"
+                                    placeholder="Mã bưu điện/ZIP">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <div class="creat_account">
+                                    <input type="checkbox" id="f-option2" name="selector">
+                                    <label for="f-option2">Tạo tài khoản?</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <div class="creat_account">
+                                    <h3>Chi tiết giao hàng</h3>
+                                    <input type="checkbox" id="f-option3" name="selector">
+                                    <label for="f-option3">Giao đến địa chỉ khác?</label>
+                                </div>
+                                <textarea class="form-control" name="message" id="message" rows="1"
+                                    placeholder="Ghi chú đơn hàng"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="order_box">
+                            <h2>Đơn hàng của bạn</h2>
+                            <ul class="list">
+                                <li><a href="#">Sản phẩm <span>Tổng</span></a></li>
+                                <li><a href="#">Blackberry tươi <span class="middle">x 02</span> <span
+                                            class="last">$720.00</span></a></li>
+                                <li><a href="#">Cà chua tươi <span class="middle">x 02</span> <span
+                                            class="last">$720.00</span></a></li>
+                                <li><a href="#">Bông cải tươi <span class="middle">x 02</span> <span
+                                            class="last">$720.00</span></a></li>
+                            </ul>
+                            <ul class="list list_2">
+                                <li><a href="#">Tạm tính <span>$2160.00</span></a></li>
+                                <li><a href="#">Vận chuyển <span>Phí cố định: $50.00</span></a></li>
+                                <li><a href="#">Tổng cộng <span>$2210.00</span></a></li>
+                            </ul>
+                            <div class="payment_item">
+                                <div class="radion_btn">
+                                    <input type="radio" id="f-option5" name="selector">
+                                    <label for="f-option5">Thanh toán bằng séc</label>
+                                    <div class="check"></div>
+                                </div>
+                                <p>Vui lòng gửi một tấm séc đến Tên cửa hàng, Đường cửa hàng, Thành phố cửa hàng,
+                                    Tỉnh/Hạt cửa hàng, Mã bưu điện cửa hàng.</p>
+                            </div>
+                            <div class="payment_item active">
+                                <div class="radion_btn">
+                                    <input type="radio" id="f-option6" name="selector">
+                                    <label for="f-option6">Paypal</label>
+                                    <img src="/assets/img/product/card.jpg" alt="">
+                                    <div class="check"></div>
+                                </div>
+                                <p>Thanh toán qua PayPal; bạn có thể thanh toán bằng thẻ tín dụng của mình nếu không có
+                                    tài khoản PayPal.</p>
+                            </div>
+                            <div class="creat_account">
+                                <input type="checkbox" id="f-option4" name="selector">
+                                <label for="f-option4">Tôi đã đọc và chấp nhận </label>
+                                <a href="#">các điều khoản & điều kiện*</a>
+                            </div>
+                            <a class="primary-btn" href="#">Tiến hành đến Paypal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================End Checkout Area =================-->
+    <!--================End Product Description Area =================-->
+    <!-- Thư viện cơ bản -->
+    <script src="/lib/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="/lib/js/vendor/bootstrap.min.js"></script>
+    <!-- File JavaScript chính -->
+    <script src="/lib/js/main.js"></script>
+
+
+    <!-- Các thư viện phụ thuộc jQuery -->
+    <script src="/lib/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/lib/js/jquery.nice-select.min.js"></script>
+    <script src="/lib/js/jquery.sticky.js"></script>
+    <script src="/lib/js/nouislider.min.js"></script>
+    <!-- <script src="/lib/js/countdown.js"></script> -->
+    <script src="/lib/js/jquery.magnific-popup.min.js"></script>
+    <script src="/lib/js/owl.carousel.min.js"></script>
+</body>
+
+</html>

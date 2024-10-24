@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+
+</head>
+
+<body id="category" ng-controller="ProductDetail">
+
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Trang chi tiết sản phẩm</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="#!/">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="">Cửa hàng<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="#!/product-detail">Chi tiết sản phẩm</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+
+    <!--================Single Product Area =================-->
+    <div class="product_image_area">
+        <div class="container">
+            <div class="row s_product_inner">
+                <!-- Khu vực hình ảnh sản phẩm -->
+                <div class="col-lg-6">
+                    <div class="s_Product_carousel">
+                        <div class="single-prd-item">
+                            <img class="img-fluid" src="/assets/img/category/s-p1.jpg" alt="Sneaker Nike">
+                        </div>
+                        <div class="single-prd-item">
+                            <img class="img-fluid" src="/assets/img/category/s-p1.jpg" alt="Sneaker Nike">
+                        </div>
+                        <div class="single-prd-item">
+                            <img class="img-fluid" src="/assets/img/category/s-p1.jpg" alt="Sneaker Nike">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Khu vực thông tin sản phẩm -->
+                <div class="col-lg-6">
+                    <div class="s_product_text">
+                        <!-- Tên và giá sản phẩm -->
+                        <h3>Giày thể thao AirFlow Pro Max</h3>
+                        <h2>3.499.000₫</h2>
+
+                        <!-- Thông tin cơ bản -->
+                        <ul class="list">
+                            <li><span>Danh mục:</span> Giày Nike</li>
+                            <li><span>Tình trạng:</span> Còn hàng</li>
+                        </ul>
+
+                        <!-- Lựa chọn màu sắc -->
+                        <div class="product_color">
+                            <h4>Màu sắc:</h4>
+                            <ul class="color_list d-flex">
+                                <li><a href="#"
+                                        style="background-color: #000000; width: 30px; height: 30px; display: block; border: 1px solid #ddd; margin-right: 10px;"></a>
+                                </li>
+                                <li><a href="#"
+                                        style="background-color: #FFFFFF; width: 30px; height: 30px; display: block; border: 1px solid #ddd; margin-right: 10px;"></a>
+                                </li>
+                                <li><a href="#"
+                                        style="background-color: #FF0000; width: 30px; height: 30px; display: block; border: 1px solid #ddd;"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Lựa chọn kích cỡ -->
+                        <div class="single-element-widget  mt-4">
+                            <h4 class="">Kích cỡ</h4>
+                            <div class="default-select" id="default-select">
+                                <select>
+                                    <option value="38">38</option>
+                                    <option value="1">39</option>
+                                    <option value="1">40</option>
+                                    <option value="1">41</option>
+                                    <option value="1">42</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Số lượng sản phẩm -->
+                        <div class="product_count mt-2">
+                            <label for="qty">Số lượng:</label>
+                            <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
+                                class="input-text qty">
+                            <button
+                                onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
+                            <button
+                                onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--;return false;"
+                                class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
+                        </div>
+
+                        <!-- Nút mua hàng -->
+                        <div class="card_area d-flex align-items-center mt-4">
+                            <a class="primary-btn" href="#">Mua ngay</a>
+                            <a class="icon_btn bg-primary ml-2" href="#"><i class="ti-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--================End Single Product Area =================-->
+
+    <!--================Product Description Area =================-->
+    <section class="product_description_area">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active show" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true">Mô tả</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false">Thông số kỹ thuật</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <!-- Phần mô tả sản phẩm luôn hiển thị -->
+                <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <p>Đôi giày thể thao AirFlow Pro Max là lựa chọn hoàn hảo cho những ai yêu thích sự kết hợp giữa
+                        thời trang và hiệu suất. Với thiết kế tối giản nhưng hiện đại, đôi giày này được làm từ chất
+                        liệu lưới siêu nhẹ giúp đôi chân luôn thông thoáng trong mọi hoạt động.
+                        <br>
+                        Đế giày được trang bị công nghệ CushionFlex mới nhất, mang lại cảm giác êm ái và hỗ trợ tối đa
+                        cho bàn chân ngay cả khi di chuyển liên tục. Phần đế ngoài làm từ cao su tự nhiên giúp tăng độ
+                        bám trên mọi bề mặt, chống trơn trượt tốt.
+                        <br>
+                        Điểm nhấn đặc biệt của AirFlow Pro Max là công nghệ AirBoost ở gót giày, giúp tăng cường độ bật
+                        nhảy và giảm chấn thương cho người dùng khi vận động mạnh. Đôi giày này phù hợp cho mọi hoạt
+                        động từ chạy bộ, tập gym cho đến đi chơi hàng ngày.
+                        <br>
+                        Màu sắc trung tính với các tông đen, trắng và xám giúp đôi giày dễ dàng kết hợp với nhiều phong
+                        cách trang phục khác nhau. AirFlow Pro Max không chỉ là một đôi giày thể thao, mà còn là tuyên
+                        ngôn thời trang cho những ai yêu thích sự năng động và phong cách hiện đại.
+                    </p>
+                </div>
+                <!-- Thông số kỹ thuật của sản phẩm -->
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td><strong>Chiều rộng</strong></td>
+                                    <td>120mm</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Chiều cao</strong></td>
+                                    <td>250mm</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Chiều sâu</strong></td>
+                                    <td>300mm</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Trọng lượng</strong></td>
+                                    <td>350g</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Chất liệu</strong></td>
+                                    <td>Lưới chống thấm nước</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Đế</strong></td>
+                                    <td>Cao su tự nhiên</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Công nghệ</strong></td>
+                                    <td>CushionFlex, AirBoost</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Màu sắc</strong></td>
+                                    <td>Đen, Trắng, Xám</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tình trạng</strong></td>
+                                    <td>Còn hàng</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Hướng dẫn bảo quản</strong></td>
+                                    <td>Không giặt máy</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================End Product Description Area =================-->
+    <!-- Thư viện cơ bản -->
+    <script src="/lib/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="/lib/js/vendor/bootstrap.min.js"></script>
+    <!-- File JavaScript chính -->
+    <script src="/lib/js/main.js"></script>
+
+
+    <!-- Các thư viện phụ thuộc jQuery -->
+    <script src="/lib/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/lib/js/jquery.nice-select.min.js"></script>
+    <script src="/lib/js/jquery.sticky.js"></script>
+    <script src="/lib/js/nouislider.min.js"></script>
+    <!-- <script src="/lib/js/countdown.js"></script> -->
+    <script src="/lib/js/jquery.magnific-popup.min.js"></script>
+    <script src="/lib/js/owl.carousel.min.js"></script>
+</body>
+
+</html>

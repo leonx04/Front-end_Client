@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="CodePixar">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+</head>
+
+<body ng-controller="ContactController">
+
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Liên hệ với chúng tôi</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="#!/">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="#!/contact">Liên hệ</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+
+    <!--================Contact Area =================-->
+    <section class="contact_area section_gap_bottom">
+        <div class="container">
+            <div id="mapBox" class="mapBox" data-lat="21.021502988026636" data-lon="105.75632497586464" data-zoom="13"
+                data-info="Ngõ 16 Đỗ Xuân Hợp, Nam Từ Liêm, Hà Nội, Việt Nam." data-mlat="21.021502988026636"
+                data-mlon="105.75632497586464">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4446.828418734242!2d105.75632497586464!3d21.021502988026636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454a1febd229d%3A0xa74c0775f969699b!2zTmfDtSAxNiDEkOG7lyBYdcOibiBI4bujcCwgTmFtIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e1!3m2!1svi!2s!4v1729773113930!5m2!1svi!2s"
+                    width="1150" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="lnr lnr-home"></i>
+                            <h6>Hà Nội, Việt Nam</h6>
+                            <p>Ngõ 16 Đỗ Xuân Hợp, Nam Từ Liêm</p>
+                        </div>
+                        <div class="info_item">
+                            <i class="lnr lnr-phone-handset"></i>
+                            <h6><a href="tel:+84987654321">+84 987 654 321</a></h6>
+                            <p>Thứ Hai - Thứ Sáu từ 9h đến 18h</p>
+                        </div>
+                        <div class="info_item">
+                            <i class="lnr lnr-envelope"></i>
+                            <h6><a href="mailto:jungnguyen2108@gmail.com">jungnguyen2108@gmail.com</a></h6>
+                            <p>Gửi email cho chúng tôi bất cứ lúc nào!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <form name="contactForm" ng-submit="submitForm(contactForm)" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" ng-model="contact.name"
+                                        placeholder="Nhập tên của bạn" required
+                                        ng-class="{'is-invalid': (contactForm.name.$invalid && (contactForm.name.$touched || submitted))}">
+                                    <div class="invalid-feedback"
+                                        ng-show="contactForm.name.$invalid && (contactForm.name.$touched || submitted)">
+                                        Vui lòng nhập tên của bạn
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" ng-model="contact.email"
+                                        placeholder="Nhập địa chỉ email" required
+                                        ng-class="{'is-invalid': (contactForm.email.$invalid && (contactForm.email.$touched || submitted))}">
+                                    <div class="invalid-feedback"
+                                        ng-show="contactForm.email.$invalid && (contactForm.email.$touched || submitted)">
+                                        Vui lòng nhập email hợp lệ
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" ng-model="contact.subject"
+                                        placeholder="Nhập tiêu đề" required
+                                        ng-class="{'is-invalid': (contactForm.subject.$invalid && (contactForm.subject.$touched || submitted))}">
+                                    <div class="invalid-feedback"
+                                        ng-show="contactForm.subject.$invalid && (contactForm.subject.$touched || submitted)">
+                                        Vui lòng nhập tiêu đề
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="1" ng-model="contact.message"
+                                        placeholder="Nhập nội dung tin nhắn" required style="min-height: 150px; width: 100%;"
+                                        ng-class="{'is-invalid': (contactForm.message.$invalid && (contactForm.message.$touched || submitted))}">
+                                    </textarea>
+                                    <div class="invalid-feedback"
+                                        ng-show="contactForm.message.$invalid && (contactForm.message.$touched || submitted)">
+                                        Vui lòng nhập nội dung tin nhắn
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-right">
+                                <button type="submit" class="primary-btn">Gửi tin nhắn</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Contact Area =================-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Thông báo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <svg width="70" height="70" viewBox="0 0 52 52"> <!-- Giảm kích thước ở đây -->
+                        <style>
+                            .check-circle {
+                                fill: none;
+                                stroke: #25ae88;
+                                stroke-width: 2;
+                                stroke-dasharray: 166;
+                                stroke-dashoffset: 166;
+                                animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+                            }
+
+                            .check {
+                                fill: none;
+                                stroke: #25ae88;
+                                stroke-width: 2;
+                                stroke-dasharray: 48;
+                                stroke-dashoffset: 48;
+                                animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+                            }
+
+                            @keyframes stroke {
+                                100% {
+                                    stroke-dashoffset: 0;
+                                }
+                            }
+                        </style>
+                        <circle class="check-circle" cx="26" cy="26" r="25"></circle>
+                        <path class="check" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                    </svg>
+                    <p>Chúng tôi đã nhận được yêu cầu của bạn và sẽ xử lý sớm nhất.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

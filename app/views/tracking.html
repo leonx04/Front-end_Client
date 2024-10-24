@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <!--
+		CSS
+		============================================= -->
+    <link rel="stylesheet" href="/lib/css/linearicons.css" />
+    <link rel="stylesheet" href="/lib/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/lib/css/themify-icons.css" />
+    <link rel="stylesheet" href="/lib/css/bootstrap.css" />
+    <link rel="stylesheet" href="/lib/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/lib/css/nice-select.css" />
+    <link rel="stylesheet" href="/lib/css/nouislider.min.css" />
+    <link rel="stylesheet" href="/lib/css/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="/lib/css/ion.rangeSlider.skinFlat.css" />
+    <link rel="stylesheet" href="/lib/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/lib/css/main.css" />
+
+</head>
+
+<body ng-controller="TrackingController">
+
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Theo dõi đơn hàng</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="#!/">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="#!/tracking">Theo dõi đơn hàng</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+
+    <!--================Khu vực theo dõi đơn hàng =================-->
+    <section class="tracking_box_area section_gap">
+        <div class="container">
+            <div class="tracking_box_inner">
+                <p>Để theo dõi đơn hàng của bạn, vui lòng nhập Mã Đơn Hàng của bạn vào ô bên dưới và nhấn nút "Theo
+                    dõi". Mã này đã được cung cấp cho bạn trên biên nhận và trong email xác nhận mà bạn đã nhận được.
+                </p>
+                <form class="row tracking_form" action="#" method="post" novalidate="novalidate">
+                    <div class="col-md-12 form-group">
+                        <input type="text" class="form-control" id="order" name="order" placeholder="Mã Đơn Hàng"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mã Đơn Hàng'">
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="Địa chỉ Email Thanh Toán" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Địa chỉ Email Thanh Toán'">
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <button type="submit" value="submit" class="primary-btn">Theo dõi Đơn Hàng</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--================Kết thúc khu vực theo dõi đơn hàng =================-->
+</body>
+
+</html>
